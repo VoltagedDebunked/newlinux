@@ -1,0 +1,12 @@
+# Ignore IDE Configs
+
+/.vscode/
+/.idea/
+
+# Ignore Builds
+
+/build/
+
+# Ignore Logfiles
+
+*.log

@@ -1,0 +1,67 @@
+# This is the root EditorConfig file for the project.
+root = true
+
+# The following settings apply to all files in the project
+[*]
+# Set the style of indentation to spaces, which is commonly used in many Linux projects
+indent_style = space
+
+# Specify the number of spaces to use for each indentation level
+indent_size = 2
+
+# Set the end of line character to LF (Line Feed) for compatibility with Unix/Linux systems
+end_of_line = lf
+
+# Define the character set to be UTF-8, ensuring support for international characters
+charset = utf-8
+
+# Disable trimming of trailing whitespace to preserve formatting in some files
+trim_trailing_whitespace = false
+
+# Ensure a final newline is not automatically inserted at the end of files,
+# which is a common practice in some projects to prevent unnecessary diffs
+insert_final_newline = false
+
+# Specific settings for Markdown files
+[*.md]
+# Use 4 spaces for indentation in Markdown files to maintain readability
+indent_size = 4
+
+# Ensure that trailing whitespace is trimmed in Markdown files for cleaner output
+trim_trailing_whitespace = true
+
+# Enable the insertion of a final newline in Markdown files, which is often expected
+insert_final_newline = true
+
+# Specific settings for Python files
+[*.py]
+# Use 4 spaces for indentation as per PEP 8 guidelines
+indent_size = 4
+
+# Enable trimming of trailing whitespace to avoid issues with Python syntax
+trim_trailing_whitespace = true
+
+# Specify the insertion of a final newline in Python files
+insert_final_newline = true
+
+# Specific settings for shell scripts
+[*.sh]
+# Use tabs for indentation as per traditional shell script style
+indent_style = tab
+
+# Disable trimming of trailing whitespace to preserve formatting in shell scripts
+trim_trailing_whitespace = false
+
+# Ensure a final newline is inserted at the end of shell scripts for compatibility
+insert_final_newline = true
+
+# Specific settings for C/C++ files
+[*.{c,cpp,h}]
+# Use 2 spaces for indentation in C/C++ files, which is a common convention in many projects
+indent_size = 2
+
+# Trim trailing whitespace in C/C++ files to maintain clean code
+trim_trailing_whitespace = true
+
+# Ensure a final newline is inserted at the end of C/C++ files
+insert_final_newline = true

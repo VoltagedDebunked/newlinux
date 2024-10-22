@@ -1,0 +1,119 @@
+# Base style to use as a starting point. LLVM is commonly used in C/C++ projects.
+BasedOnStyle: LLVM
+
+# Number of spaces to use for indentation
+IndentWidth: 2
+
+# Specify whether to use tabs or spaces for indentation
+UseTab: Never
+
+# Allow short blocks to be on a single line if they're empty
+AllowShortBlocksOnASingleLine: Empty
+
+# Allow short case labels to be on a single line
+AllowShortCaseLabelsOnASingleLine: true
+
+# Allow short functions to be defined on a single line if they fit
+AllowShortFunctionsOnASingleLine: Empty
+
+# Align consecutive assignments for better readability
+AlignConsecutiveAssignments: true
+
+# Align consecutive variable declarations
+AlignConsecutiveDeclarations: true
+
+# Align operands for better readability
+AlignOperands: true
+
+# Always break after the return type in function definitions
+AlwaysBreakAfterDefinitionReturnType: All
+
+# Always break before multiline string literals for readability
+AlwaysBreakBeforeMultilineStrings: true
+
+# Pack arguments of function calls onto a single line if possible
+BinPackArguments: true
+
+# Pack parameters in function declarations onto a single line if possible
+BinPackParameters: true
+
+# Style for braces. Allman style puts opening braces on a new line
+BreakBeforeBraces: Allman
+
+# Break before ternary operator conditions for clarity
+BreakBeforeTernaryOperators: true
+
+# Set the column limit to 0 to disable line length enforcement
+ColumnLimit: 0
+
+# Maintain comments before pragmas
+CommentPragmas: true
+
+# Compact namespaces to fit better within the line length
+CompactNamespaces: true
+
+# Use the C++11 braced list style for initializer lists
+Cpp11BracedListStyle: false
+
+# Set to false to not derive line ending from the input files
+DeriveLineEnding: false
+
+# Disable formatting for certain parts of the code if needed
+DisableFormat: false
+
+# Enable formatting for the code
+EnableFormat: true
+
+# Set the line ending style to LF for compatibility with Unix/Linux systems
+EndOfLine: LF
+
+# Fix namespace comments to follow conventions
+FixNamespaceComments: true
+
+# Include blocks to preserve the original order of includes
+IncludeBlocks: Preserve
+
+# Define categories for sorting includes
+IncludeCategories:
+  - Regex: '^<.*>'
+    Priority: 2  # System includes have higher priority
+  - Regex: '^".*"$'
+    Priority: 1  # Local includes have the highest priority
+  - Regex: '^.*'
+    Priority: 3  # Any other includes will be sorted last
+
+# Indent case labels for better structure
+IndentCaseLabels: true
+
+# Do not indent labels for goto statements
+IndentGotoLabels: false
+
+# Indent preprocessor directives before the hash symbol
+IndentPPDirectives: BeforeHash
+
+# Keep empty lines at the start of blocks for clarity
+KeepEmptyLinesAtTheStartOfBlocks: true
+
+# Limit the number of empty lines to keep
+MaxEmptyLinesToKeep: 1
+
+# Sort includes based on the defined categories; false to disable sorting
+SortIncludes: false
+
+# Add a space after C-style casts for clarity
+SpaceAfterCStyleCast: true
+
+# Add a space before parentheses in control statements (if, while, etc.)
+SpaceBeforeParens: ControlStatements
+
+# Do not add spaces inside parentheses
+SpacesInParentheses: false
+
+# Set the width of tabs for indentation
+TabWidth: 2
+
+# Use CRLF for line endings; set to false to use LF
+UseCRLF: false
+
+# Use tabs for indentation; specify whether to use them or not
+UseTab: Never
